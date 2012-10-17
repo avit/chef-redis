@@ -7,7 +7,6 @@ version          "4.0.01"
 description      "Redis: a fast, flexible datastore offering an extremely useful set of data structure primitives"
 
 depends          "runit"
-depends		       "sysctl"
 recipe           "redis::default",                     "Base configuration for redis"
 recipe           "redis::install_from_package",        "Install From Ubuntu Package -- easy but lags in version"
 recipe           "redis::install_from_release",        "Install From Release"
